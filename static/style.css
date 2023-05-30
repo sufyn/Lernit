@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Nunito:wght@200;300;400;500;600;700;800&family=Yantramanav:wght@300;400&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+/* {
+    pink: 251, 137, 188;
+    blue: 10, 104, 113;
+    black: 10, 10, 10;
+    white: 247, 255, 224;
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button{
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+body{
+    background-color: #faeee2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-login-list{
+    list-style: none;
+}
+
+.nav-login-list li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-items-list{
+    list-style: none;
+}
+
+.nav-items-list li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.hero-grid{
+    display: grid;
+    
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.hero-img{
+    background-image: url("https://images.pexels.com/photos/207700/pexels-photo-207700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    height: 89vh;
+    z-index: -1;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.hero-content button {
+    color: #faeee2;
+    background-color: rgb(224, 118, 61);
+    padding: 20px 40px;
+    border: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 39%;
+  }
+
+.hero-title{
+    color: rgb(48, 37, 37);
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    position: absolute;
+    z-index: 999;
+    background-color: none;
+    top: 30%;
+    left: 30%;
+}
+
+.hero-title h2{
+    position: absolute;
+    left: 109%;
+    top: -25%;
+    color: rgb(251, 137, 188);
+    font-family: 'Lato', sans-serif; 
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.hero-des{
+    color: rgb(189, 184, 184);
+    font-family:'Yantramanav', sans-serif ;
+    opacity: 70%;
+    text-align: center;
+    margin: 30px 10px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+}
+
+
+.hero-para,.hero-para2,.hero-para3{
+    font-family:'Yantramanav', sans-serif ;
+    color: rgb(160, 160, 160);
+    opacity: 70%;
+    text-align: justify;
+    width: 470px;
+    height: auto;
+    font-size: large;
+    padding-right: 30px;
+    position: absolute;
+    right: 0;
+}
+.hero-para2{
+    top: 45%;
+    width: 340px;
+    padding-right: 0px;
+    padding-left: 20px;
+    left: 0;
+}
+.hero-para3{
+bottom: 0;
+left: 10;
+right: 0;
+width: 1350px;
+padding-bottom: 20px;
+}
+.hero-para h3{
+    color:rgb(247, 109, 37);
+}
+
+.hero-content{
+    padding-left: 30px;
+}
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-logo"><a href="/">LERNIT</a></div>
+        <div class="nav-items">
+            <ul class="nav-items-list">
+
+                <li><a href="/">Home</a></li>
+                <li><a href="/features">Features</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/pricing">Premium</a></li>
+            </ul>
+        </div>
+        <div class="nav-login">
+            <ul class="nav-login-list">
+                <li><a href="/login">LogIn</a></li>
+                <li><a href="/signup">Signin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="hero-grid">
+        <div class="hero-content">
+            
+            <div class="hero-des">Learn to learn again, With <h3>LERNIT.</h3> </div>
+
+      
+            <a href="/youtube">            <button id="scroll-down" >Get Started</button></a>
+      
+        </div>
+        <div class="hero-img">
+            <div class="hero-title">Explore Your <h2>Curiosity</h2></div>
+      
+        </div>
+        <div class="hero-para">
+            
+            This platform uses AI to help you find the best resources for any given topic.
+            Then test your skills using FlashCards.
+            In addition to our comprehensive learning resources, our platform is designed with the latest technologies to ensure a seamless learning experience. 
+        </div>
+        <div class="hero-para2">
+            At our platform, we believe that learning should be a rewarding and enriching experience that can transform lives.
+            That's why we are committed to providing an exceptional learning experience that is both engaging and effective.
+      
+        </div>
+        <div class="hero-para3">
+            Whether you are looking to advance your career or pursue a personal interest, our platform has everything you need to achieve your learning goals. 
+            Join us today and discover the power of learning on our platform.
+     
+        </div>
+    </div>
+        <div class="hero-content">
+      
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="{{url_for('static', filename='scroll.js')}}"></script>
+    
+    
+</body>
+</html>

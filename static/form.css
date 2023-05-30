@@ -1,0 +1,453 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #a504aa;
+  }
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+    display: none;
+  }  
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button,.open-button1 {
+  background-color: #555555;
+  border: 1.5px solid #555555;
+  color: white;
+  padding: 16px 20px;
+  
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 160px;
+  right: 28px;
+  width: 280px;
+}
+.open-button1{
+    top: 80px;
+    position: relative;
+    float: left;
+}
+
+@media screen and (max-width:435px) {
+    body{
+        width: auto;
+    }
+
+    .open-button1{ 
+        top: 80px;
+        left: 13%;
+    }
+    .open-button{
+        left: 17%;
+        z-index: 9;
+    }
+    #form{
+      position: relative;
+      
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:769px) {
+    #form{
+        left: 7%;
+    }    
+    .open-button{
+        bottom: 132px;
+    }
+  
+}
+@media screen and (min-width:395px) and (max-width:425px) {
+    .open-button1{
+        top: 80px;
+    }    
+    #heart{
+      z-index: 9;
+      margin-top: 2vw;
+      margin-left: 5vw;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:395px) {
+    
+    .bg-text h1{
+      font-size: 12vw;
+    }
+    .bg-text p{
+      font-size: 7vw;
+    }
+    .open-button,.open-button1{
+        width: 200px;
+        margin-left: 4vw;
+        margin-right: 6vw; 
+    }
+    .open-button{
+        bottom: 150px;
+    }
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+#form{
+    border: 3px solid #555555;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+  
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("bg.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    float: left;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .bg-text2{
+    position: absolute;
+    float: left;
+    z-index: 2;
+    top: 60%;
+    left: 5%;
+    font: 1.6em sans-serif;
+    font-style: italic;
+  }
+  .marq{
+    z-index: 9; 
+    position: absolute; 
+    font-size: 25px;
+
+  }
+  @media screen and (max-width:1024px) {
+    body{
+        margin: 0px;
+    }
+    .bg-text{
+        left: 50%;
+        font-size:30px ;
+    }
+    .bg-text2{
+        right: 3%;
+    }
+  }
+
+  .e,.g{
+    font-size: 40px;
+    position: absolute;
+    z-index: 9;
+}
+.g{
+    animation: upp 10s infinite ;
+    }
+.e{
+    animation: roup 10s infinite ;
+    }
+    @keyframes upp {
+      0%{
+          transform:   translateY(2500px) ;
+      }
+      50%{
+          transform: translateY(-200px) ;
+      }
+      100%{
+          transform: translateX(-289px);
+          transform: translateY(-500px);   
+  }
+  }
+  @keyframes roup {
+    0%{
+        transform:   translateY(2500px) ;
+    }
+    50%{
+      transform: rotate3d(0, 0, 1, 260deg);
+        transform: translateY(-200px) ;
+    }
+    100%{
+       transform: rotate3d(0, 0, 1, 360deg);
+    }
+ }
+
+#heart{
+  font-size: 50px;
+  position: absolute;
+ z-index: 9;
+  animation: beat 10s infinite ;
+}
+
+        /* 
+
+.c1,.c2,.c3,.c4,.c5,.c6{
+    padding: 20px;
+    border: 3px solid #f1f1f1;
+    text-align: center;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 100%;
+    z-index: 2;
+    width: 10%;
+    height: 20%;
+    color: white;
+    
+}
+.c1{
+    animation: up 15s infinite ;
+    
+}
+.c2{
+    border: 0px;
+    height: 10%;
+    width: 5%;
+    background-color: #c72e2e;
+    animation: rup 8s infinite  ;
+float: right;    
+}
+.c3,.c4,.c5,.c6{
+    border: 0px;
+    height: 10%;
+    width: 5%;
+    float: right;
+    background-color: #c4c72e;
+    animation: rup 10s infinite  ;
+}
+.c4{
+    background-color: #2ec72e;
+    animation: up 15s infinite  ;
+}
+@media screen and (max-width: 768px) {
+    .c1,.c2,.c3,.c4,.c5,.c6{
+        height: auto;
+        width: 10%;
+    }
+    .c2{
+        float: left;
+    }
+    .c3,.c4,.c5,.c6{
+        float: left;
+        top: 0px;
+    }
+    .bg-text{
+        text-align: center;
+        
+        font-size: 20px;
+    }
+}
+    
+
+.c5{
+    background-color: #2e2ec7;
+    animation: rup 20s infinite  ;
+}
+.c6{
+    background-color: #c72e99;
+    animation: up 10s infinite  ;
+    float: left;
+}
+@keyframes rup {
+    0%{
+        transform:   translateY(-2500px) ;
+        transform: translateX(-900px);
+    }
+    50%{
+        transform: translateX(-1500px) ;
+    }
+    100%{
+        transform: translateX(-289px);
+        transform: translateY(-2000px);   
+}
+}
+@keyframes up{
+    0%{
+        transform:   translateZ(0) ;
+    }
+    
+    15%{
+        transform: translateY(-500px) ;
+        
+    }
+    50%{
+
+        transform: translateX(289px);
+    }
+    95%{
+        
+        transform: translateY(-1500px);
+    }
+    100%{
+        transform: translateX(-100px);
+
+    }} */
+footer {
+    background-color: #092947;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 500px;
+}
+ 
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .navbar .login-container {
+      float: none;
+    }
+    .navbar a, .topnav input[type=text], .navbar .login-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .navbar input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+ /* Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+
+
+
+
